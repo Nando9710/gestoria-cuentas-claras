@@ -1,0 +1,76 @@
+/* ******************** Fonts ******************** */
+
+@font-face {
+  font-family: "Hind-Regular";
+  font-style: normal;
+  font-display: swap;
+  src: url(/fonts/Hind/Hind-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "LeagueSpartan-Regular";
+  font-style: normal;
+  font-display: swap;
+  src: url(../../public/fonts/League_Spartan/static/LeagueSpartan-Regular.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "LeagueSpartan-Medium";
+  font-style: normal;
+  font-display: swap;
+  src: url(../../public/fonts/League_Spartan/static/LeagueSpartan-Medium.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "LeagueSpartan-Bold";
+  font-style: normal;
+  font-display: swap;
+  src: url(../../public/fonts/LeagueSpartan/static/LeagueSpartan-Bold.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "LeagueSpartan-Black";
+  font-style: normal;
+  font-display: swap;
+  src: url(../../public/fonts/LeagueSpartan/static/LeagueSpartan-Black.ttf)
+    format("truetype");
+}
+
+/* ******************** Custom Properties ******************** */
+
+:root {
+  --font-text-400: "LeagueSpartan-Regular", sans-serif;
+  --font-text-500: "LeagueSpartan-Medium", sans-serif;
+  --font-text-700: "LeagueSpartan-Bold", sans-serif;
+  --font-text-900: "LeagueSpartan-Black", sans-serif;
+  --font-text: "Hind-Regular", sans-serif;
+
+  --color-logo: #b58f1b;
+  --bg-logo: var(--color-logo);
+  --text-color-logo: var(--color-logo);
+  --shadow-logo: 0px 5px 16px 0px #ad9448;
+  --text-gray: #646464;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  /* min-height: 100vh; */
+  /* color: var(--color-text); */
+  /* background: var(--color-background); */
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: var(--font-text-400), sans-serif;
+  font-size: 16px;
+  /* text-rendering: optimizeLegibility; */
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}

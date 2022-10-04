@@ -1,0 +1,272 @@
+@import "./base.css";
+
+#app {
+  font-weight: normal;
+}
+
+h1 {
+  margin-top: 1rem;
+  font-size: 4vw;
+}
+h2 {
+  font-family: var(--font-text-500);
+  font-size: 3.5vw;
+  text-align: center;
+}
+h3 {
+  font-family: var(--font-text-400);
+  font-size: 3vw;
+  color: var(--text-color-logo);
+}
+@media screen and (max-width: 48em) {
+  h2 {
+    font-size: 5vw;
+  }
+  h3 {
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  h2 {
+    font-size: 6vw;
+  }
+  h3 {
+    font-size: 5vw;
+  }
+}
+h4 {
+  font-family: var(--font-text-900);
+  padding: 1rem 0;
+  font-weight: bolder;
+  line-height: 1.2;
+  font-size: large;
+}
+
+h6 {
+  margin-top: 2rem;
+  margin-left: 4rem;
+  font-size: 2.5vw;
+  font-family: var(--font-text-700);
+}
+
+p {
+  font-family: var(--font-text);
+  font-weight: 400;
+  line-height: 2rem;
+  color: var(--text-gray);
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 37.5em) {
+  p,
+  span,
+  footer p,
+  footer span {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+}
+figcaption {
+  text-align: center;
+  font-family: var(--font-text-900);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.container {
+  padding: 4rem;
+}
+@media screen and (max-width: 48em) {
+  .container {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 48em) {
+  .container {
+    padding: 0.5rem;
+  }
+}
+
+.text-gray {
+  color: var(--text-gray);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-title-small {
+  font-family: var(--font-text-400);
+}
+
+.font-title-large {
+  font-family: var(--font-text-500);
+}
+
+.color-logo {
+  color: var(--text-color-logo);
+}
+
+.bg-white {
+  background-color: white;
+  transition: 0.1s;
+}
+
+.shadow-header {
+  box-shadow: var(--shadow-logo);
+  transition: 0.5s;
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.whidth-100 {
+  width: 100%;
+}
+
+/* ******************** HEADER Decoration******************** */
+
+/* .header-decoration {
+  position: absolute;
+}
+
+.corner-circle img {
+  width: 10rem;
+}
+
+.rotate-square-one img {
+  position: absolute;
+  width: 7vw;
+  bottom: 7rem;
+  left: 25rem;
+}
+
+.rotate-square-two {
+  position: absolute;
+  width: 4vw;
+  top: 30rem;
+  left: 10vw;
+} */
+
+/* ******************** NavHorizontal ******************** */
+.nav-horizontal a {
+  margin: 0 0.5rem;
+  transition: 0.5s;
+  color: var(--text-gray);
+  font-family: var(--font-text-900);
+  font-weight: bolder;
+}
+
+.nav-horizontal a:hover {
+  color: var(--text-color-logo);
+}
+
+@media screen and (max-width: 48em) {
+  .nav-horizontal {
+    display: none;
+  }
+}
+/* ******************** NavVertical ******************** */
+.nav-vertical a {
+  color: var(--color-logo);
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 0.5rem 0 0.5rem 0;
+  transition: 0.3s;
+}
+
+.nav-vertical a:hover {
+  background-color: var(--bg-logo);
+  color: white;
+}
+
+@media screen and (min-width: 48em) {
+  .nav-vertical {
+    display: none;
+  }
+}
+
+/* ******************** HOME ******************** */
+
+.home-container {
+  height: 700px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.img-home {
+  background-image: url(../assets/banner-image.png);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title-container {
+  margin-left: 10vw;
+  z-index: 998;
+  width: 60%;
+}
+
+@media screen and (max-width: 48em) {
+  .home-container {
+    height: 500px;
+  }
+  h1 {
+    font-size: 6vw;
+  }
+  .title-container h4 {
+    font-size: 4vw;
+  }
+  h6 {
+    font-size: 4vw;
+    margin-left: 2rem;
+  }
+}
+
+/* ******************** About Us ******************** */
+
+.about-image {
+  position: relative;
+}
+
+.single-image {
+  width: 360px;
+}
+
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+.image-tow {
+  bottom: 4rem;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .about-image .single-image.image-tow {
+    margin-top: -150px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-image .single-image {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .about-image .single-image {
+    width: 280px;
+  }
+}
